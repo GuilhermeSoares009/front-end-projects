@@ -10,37 +10,37 @@ function App() {
   {      
     nome:'Programação',
     corPrimaria:'#82CFFA',
-    corSecundarias:'#E8F8FF'
+    corSecundaria:'#E8F8FF'
   },
   {
     nome:'Front-End',
     corPrimaria:'#A6D157',
-    corSecundarias:'#F0F8E2'
+    corSecundaria:'#F0F8E2'
   },
   {
     nome:'Data Science',
     corPrimaria:'#A6D137',
-    corSecundarias:'#D9F7E9'
+    corSecundaria:'#D9F7E9'
   },
   {
     nome:'Devops',
     corPrimaria:'#A60157',
-    corSecundarias:'#F0F8E2'
+    corSecundaria:'#F0F8E2'
   },
   {
     nome:'UX e Design',
     corPrimaria:'#DB6E8F',
-    corSecundarias:'#FAE9F5'
+    corSecundaria:'#FAE9F5'
   },
   {
     nome:'Mobile',
     corPrimaria:'#FFBA05',
-    corSecundarias:'#FFF509'
+    corSecundaria:'#FFF509'
   },
   {
     nome:'Inovação e Gestão',
     corPrimaria:'#FF8A29',
-    corSecundarias:'#FFEEDF'
+    corSecundaria:'#FFEEDF'
   }
 
   ];
