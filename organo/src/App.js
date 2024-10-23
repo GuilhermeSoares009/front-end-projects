@@ -6,6 +6,45 @@ import Time from './componentes/Time';
 
 function App() {
 
+  const times = [
+  {      
+    nome:'Programação',
+    corPrimaria:'#82CFFA',
+    corSecundarias:'#E8F8FF'
+  },
+  {
+    nome:'Front-End',
+    corPrimaria:'#A6D157',
+    corSecundarias:'#F0F8E2'
+  },
+  {
+    nome:'Data Science',
+    corPrimaria:'#A6D137',
+    corSecundarias:'#D9F7E9'
+  },
+  {
+    nome:'Devops',
+    corPrimaria:'#A60157',
+    corSecundarias:'#F0F8E2'
+  },
+  {
+    nome:'UX e Design',
+    corPrimaria:'#DB6E8F',
+    corSecundarias:'#FAE9F5'
+  },
+  {
+    nome:'Mobile',
+    corPrimaria:'#FFBA05',
+    corSecundarias:'#FFF509'
+  },
+  {
+    nome:'Inovação e Gestão',
+    corPrimaria:'#FF8A29',
+    corSecundarias:'#FFEEDF'
+  }
+
+  ];
+
   const [colaboradores, setColaboradores] = useState([])
 
   const aoNovoColaboradorAdicionado = (colaborador) => {
@@ -17,9 +56,9 @@ function App() {
     <div className="App">
       <Banner/>
       <Formulario aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)} />
-      <Time nome="Programação"/>
-      <Time nome="Frontend"/>
-      <Time nome="Data Science"/>
+
+      {times.map(time => <Time key={time.nome} nome={time.nome} corPrimaria={time.corPrimaria} corSecundaria={time.corSecundaria} />)}
+
     </div>
   );
 }
